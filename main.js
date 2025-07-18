@@ -16,7 +16,7 @@ async function getITHomeRankDaily(account) {
 
   const formatedNewsList = newsList.map((item, index) => {
     const { title, url, desc } = item;
-    return `*${title}*\n${desc}[查看详情](${url})`;
+    return `*${title}*\n\n${desc}[查看详情](${url})`;
   });
 
   return formatedNewsList.join("\n\n\n");
